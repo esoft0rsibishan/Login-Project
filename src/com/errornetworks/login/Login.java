@@ -1,5 +1,6 @@
 package com.errornetworks.login;
 
+import java.awt.Toolkit;
 import javax.swing.JOptionPane;
 
 public class Login extends javax.swing.JFrame {
@@ -8,6 +9,7 @@ public class Login extends javax.swing.JFrame {
 
     public Login() {
         initComponents();
+        setIcon();
         this.setLocationRelativeTo(null);
     }
     
@@ -241,4 +243,8 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JButton jReset;
     private javax.swing.JTextField jUserName;
     // End of variables declaration//GEN-END:variables
+
+    private void setIcon() {
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("EN.png")));
+    }
 }
